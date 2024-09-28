@@ -112,3 +112,21 @@ body {
 .result span.perfect {
     color: #0075ff;
 }
+
+@media (max-width:991px) {
+    .quiz-app {
+        width: 500px;
+    }
+}
+
+@media (max-width:767px) {
+    .quiz-app {
+        width: 350px;
+    }
+
+    .bullets {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

@@ -25,7 +25,7 @@ function getRequest() {
 
             addQuestionArea(value[currentIndex], qNum);
 
-            countdown(130, qNum);
+            countdown(70, qNum);
 
             submit.onclick = function () {
                 let theRightAnswer = value[currentIndex].right_answer;
@@ -40,7 +40,7 @@ function getRequest() {
                 handleBullet();
 
                 clearInterval(countdownInterval);
-                countdown(130, qNum);
+                countdown(70, qNum);
 
                 showResults(qNum);
             }
