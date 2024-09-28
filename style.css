@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+}
+
+.quiz-app {
+    width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+
+.quiz-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.que-area {
+    font-weight: 600;
+    padding: 20px;
+    background-color: white;
+    font-size: 26px;
+}
+
+.answer-area {
+    background-color: white;
+    padding: 0 20px 20px;
+}
+
+.answer-area .answer {
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+.answer-area .answer:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.answer-area .answer input[type="radio"]:checked+label {
+    color: #0075ff;
+}
+
+.answer-area .answer label {
+    position: relative;
+    top: -1px;
+    color: #777;
+    font-weight: 500;
+    font-size: 17px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    border: none;
+    background-color: #0075ff;
+    color: white;
+    padding: 15px;
+    margin: 15px auto;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.bullets {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-top: 1px solid #dfdfdf;
+}
+
+.bullets .spans {
+    display: flex;
+}
+
+.bullets .spans span {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.bullets .spans span:not(:first-child) {
+    margin-left: 6px;
+}
+
+.bullets .spans span.on {
+    background-color: #0075ff;
+}
+
+.result span {
+    font-weight: 600;
+}
+
+.result span.bad {
+    color: #dc0a0a;
+}
+
+.result span.good {
+    color: #009688;
+}
+
+.result span.perfect {
+    color: #0075ff;
+}
